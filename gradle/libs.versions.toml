@@ -1,0 +1,52 @@
+[versions]
+activity-compose = "1.7.2"
+agp = "8.1.0"
+androidx-material = "1.5.0"
+foundation = "1.5.0"
+org-jetbrains-kotlin-android = "1.8.0"
+lifecycle_version = "2.6.1"
+core-ktx = "1.10.1"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.9.0"
+ui = "1.5.0"
+napier = "2.1.0"
+version = "1.0.0"
+koin = "3.4.3"
+settings = "1.0.0"
+sql-delight = "2.0.0"
+
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+androidx-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "foundation" }
+androidx-material = { module = "androidx.compose.material:material", version.ref = "androidx-material" }
+androidx-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle_version" }
+androidx-ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
+androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "ui" }
+androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "ui" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+napier = { group = "io.github.aakira", name = "napier", version.ref = "napier" }
+koin = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin-test = { group = "io.insert-koin", name = "koin-test", version.ref = "koin" }
+koin-anroid = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+multiplatform-settings = {module = "com.russhwolf:multiplatform-settings",version.ref= "settings"}
+sql-delight-android = {module = "app.cash.sqldelight:android-driver", version.ref = "sql-delight"}
+sql-delight-native = {module = "app.cash.sqldelight:native-driver", version.ref = "sql-delight"}
+sql-delight-runtime =  {module = "app.cash.sqldelight:runtime", version.ref = "sql-delight"}
+
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+
+[bundles]
+
