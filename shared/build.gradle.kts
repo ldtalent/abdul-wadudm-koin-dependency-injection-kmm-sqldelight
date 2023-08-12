@@ -67,3 +67,12 @@ android {
         minSdk = 24
     }
 }
+
+sqldelight {
+    databases{
+        create("NoteDatabase"){
+            packageName.set("com.example.di")
+            deriveSchemaFromMigrations.set(true)
+        }
+    }
+}

@@ -1,0 +1,6 @@
+selectAll:
+SELECT * FROM NotesDb;
+
+insertNote:
+INSERT OR IGNORE INTO NotesDb(id,title,description)
+VALUES (:id, :title, :description);
